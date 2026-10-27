@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO CALCULADORA</title>
+</head>
+<body>
+    <h1>SEGUNDA AULA DE HTML COM JAVASCRIPT</h1><hr>
+    <label for="idPrimeiroNumero">Primeiro Número</label>
+    <input type="number" id="idInPrimeiroNumero" placeholder="numero"> <br>
+    <label for="idSegundoNumero">Segundo número</label>
+    <input type="number" id="idInSegundoNumero" placeholder="numero"> <br>
+    <button type="button" id="btnAdicao" onclick="adicionar()">ADICIONAR</button>
+    <button type="button" id="btnSubtracao" onclick="subtrair()">SUBTRAIR</button>
+    <button type="button" id="btnMultiplicacao" onclick="multiplicar()">MULTIPLICAR</button>
+    <button type="button" id="btnDivisao" onclick="dividir()"> DIVIDIR</button>
+    <button type="button" id="btnPotencia" onclick="potenciacao()">POTÊNCIA</button>
+    <button type="button" id="btnRaiz" onclick="calcularRaiz()">RAÍZ</button> <hr>
+    <h3>RESULTADO</h3>
+    <p id="idOutResultado"></p>
+    
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

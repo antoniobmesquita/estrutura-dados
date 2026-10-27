@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO CONJUNTO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>PROGRAMA DO PROJETO CONJUNTO</h1>
+    <label for="inTamanhoConjunto">DIGITE O TAMANHO DO CONJUNTO: </label>
+    <input type="number" id="inTamanhoConjunto" placeholder="Tamanho do conjunto">
+    <button type="button" id="btnCriarConjunto" onclick="eventoCriarConjunto()">Criar conjunto</button>
+    <h3>Apresentação do conjunto criado aleatoriamente</h3>
+    <h4>
+        <p id="onSaidaConjunto"></p>
+    </h4>
+    <hr>
+    <h2>BUSCA SEQUENCIAL</h2>
+    <label for="inConjunto">Digite o número a ser buscado no conjunto </label>
+    <input type="number" name="" id="inConjunto" placeholder="Digite o número: ">
+    <button type="button" id="btnComparar" onclick="eventoBuscarNumero()"> Verificar número</button>
+    <h3>Resultado da busca sequencial</h3>
+    <h4>
+        <p id="resultadoComparacao"> </p>
+    </h4>
+    <hr>
+    <h2>MOSTRAR O MAIOR NÚMERO</h2>
+    <button type="button" id="btnMostrarMaior" onclick="eventoMostrarMaiorNumero()">Mostrar o maior numero do
+        conjunto</button>
+    <h4>
+        <p id="maiorNumero"></p>
+    </h4>
+    <hr>
+    <h2>MOSTRAR O MENOR NÚMERO</h2>
+    <button type="button" id="btnMostrarMenor" onclick="eventoMostrarMenorNumero()">Mostrar o maior numero do
+        conjunto</button>
+    <h4>
+        <p id="menorNumero"></p>
+    </h4>
+    <hr>
+    <h3>VETOR ORDENADO</h3>
+    <button type="button" id="btnExibirConjunto2" onclick="exibirConjunto2()">Mostrar vetor ordenado</button>
+    <p id="mostrarVetor2"></p>
+    <hr>
+    <h2>BUSCA BINÀRIA</h2>
+    <label for="inConjunto">Digite o número a ser buscado no conjunto </label>
+    <input type="number" name="" id="inConjuntoOrdenado" placeholder="Digite o número: ">
+    <button type="button" id="btnCompararBinario" onclick="eventoBuscaBinaria()"> Verificar número</button>
+    <h3>Resultado da busca binaria</h3>
+    <h4>
+        <p id="resultadoComparacaoBinaria"> </p>
+    </h4>
+    <script src="js/engine.js"></script>
+</body>
+
+</html>

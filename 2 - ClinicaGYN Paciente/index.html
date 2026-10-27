@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Cálculo de IMC - ClinGYN</title>
+</head>
+<body>
+
+  <h1>Clínica GYN - Controle de Peso</h1>
+
+  <!-- Formulário de Coleta de Dados do Paciente -->
+  <form id="idFormularioPaciente">
+    <fieldset>
+      <legend>Cadastro do Paciente</legend>
+
+      <p>
+        <label for="campoNome">Nome Completo:</label><br>
+        <input type="text" id="idInCampoNome" required>
+      </p>
+
+      <p>
+        <label for="campoPeso">Peso (kg):</label><br>
+        <input type="number" id="idInCampoPeso" step="0.01" min="1" required>
+      </p>
+
+      <p>
+        <label for="campoAltura">Altura (m):</label><br>
+        <input type="number" id="idInCampoAltura" step="0.01" min="0.30" max="2.60" required>
+      </p>
+
+      <p>
+        <label for="campoSexo">Sexo:</label><br>
+        <select id="idInCampoSexo" required>
+          <option value="">Selecione...</option>
+          <option value="M">Masculino</option>
+          <option value="F">Feminino</option>
+        </select>
+      </p>
+
+      <p>
+        <button type="submit">Calcular e Exibir</button>
+        <button type="reset">Limpar</button>
+      </p>
+    </fieldset>
+  </form>
+
+  <!-- Área destinada à exibição das informações calculadas -->
+  <!--
+    aria-live="polite": atributo da especificação WAI-ARIA 
+    (Accessible Rich Internet Applications) que cria uma região 
+    dinâmica (live region) para tecnologias de apoio, 
+    tais como leitores de Tela.
+  -->
+  <section id="idOutAreaResultado" aria-live="polite"></section>
+
+  <!--  Importação do arquivo de integração em formato de módulo ES6 -->
+  <!--  type = "module" serve para indicar que o app.js vai importar itens-->
+  <!--
+        type="module": é o atributo fundamental aqui. 
+        Ele avisa ao navegador que o arquivo faz uso do sistema nativo 
+        de módulos do JavaScript (ESM). Isso habilita comportamentos essenciais:
+        Permite o uso de import e export: sem type="module", 
+        comandos como import { Paciente } from './Paciente.js'; 
+        gerariam um erro no console (SyntaxError: Cannot use import statement 
+        outside a module).
+  --> 
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

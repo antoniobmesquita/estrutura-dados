@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Contra-cheque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <h1>GYNAlimentos</h1>
+    </header>
+    <form id="idFormularioFuncionario">
+        <fieldset>
+            <legend>Dados do funcionário</legend>
+            <label for="numeroMatricula">Número da matricula: </label>
+            <br>
+            <input type="number" id="idInNumeroMatricula" name="numeroMatricula" required>
+            <br><br>
+            <label for="nome">Nome: </label>
+            <br>
+            <input type="text" id="idInNome" name="nome" required>
+            <br><br>
+            <label for="numeroDependentes">Numero de dependentes: </label>
+            <br>
+            <input type="number" id="idInNumeroDependentes" name="numeroDependentes" required>
+            <br><br>
+            <label for="salarioBase">Salário Base: </label>
+
+            <br>
+            <input type="number" id="idInSalarioBase" name="salarioBase" required>
+            <br><br>
+            <label for="producao"> Produção: </label>
+            <br>
+            <input type="number" id="idInProducao" name="producao" required>
+            <p class="botoes">
+                <button type="submit" id="botaoEnviar">Enviar</button>
+                <button type="reset" value="" id="botaoLimpar">Limpar </button>
+            </p>
+        </fieldset>
+    </form>
+    <section id="idOutContraCheque" aria-live="polite"></section>
+    <footer id="rodape">
+        <hr>
+        <h2>Contato</h2>
+        <p>GYNAlimentos
+            <br>
+            Atendimento em tecnologia <br>
+            Goiânia - Goiás
+        </p>
+        <p>Email: <a href="#">contato@gynalimentos.com</a></p>
+        <p><a href="index.html">Voltar ao inicio</a></p>
+    </footer>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

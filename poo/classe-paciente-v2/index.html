@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Ficha do Paciente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="idFormularioPaciente">
+        <header>
+            <h1>CLINICA GYN</h1>
+        </header>
+        <main>
+            <form id="idFormularioPaciente">
+                <fieldset>
+                    <legend>Dados do paciente</legend>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="idInNome">
+                    <br><br>
+                    <label for="peso">Peso: </label>
+                    <input type="number" name="peso" id="idInPeso">
+                    <br><br>
+                    <label for="altura">Altura: </label>
+                    <input type="number" name="altura" id="idInAltura" step="0.01" min="0.30" max="2.60">
+                    <br><br>
+                    <label for="sexo">Sexo: </label>
+                    <select name="" id="idInSexo">
+                        <option value="">Selecione...</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                    <p class="botoes">
+                        <button type="submit" id="botaoEnviar"> Enviar</button>
+                        <button type="reset" id="botaoLimpar"> Limpar</button>
+                    </p>
+                </fieldset>
+
+            </form>
+            <section id="idOutAreaResultado" aria-live="polite"></section>
+            <script type="module" src="./app.js"></script>
+</body>
+
+</html>
